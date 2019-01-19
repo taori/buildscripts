@@ -99,8 +99,8 @@ function CsProj-GetVersion {
 function Custom-GetPaddedBuildNumber {
     [cmdletbinding()]
     param (
-        [Parameter(Position=0, Mandatory=1,ValueFromPipeline=$true)]
-        [int] $length
+        [Parameter(Position=0, Mandatory=0,ValueFromPipeline=$true)]
+        [int] $length = 5
     )
     
     if($length -eq 0){
