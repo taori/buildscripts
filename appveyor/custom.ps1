@@ -50,7 +50,7 @@ function CsProj-GetVersionPrefix {
         [Parameter(Position=0, Mandatory=1,ValueFromPipeline=$true)]
         [string] $file,
         [Parameter(Position=1, Mandatory=0)]
-        [switch] $isFile = 1
+        [switch] $isFile = $true
     )
 
     if($isFile){
@@ -68,7 +68,7 @@ function CsProj-GetVersionSuffix {
         [Parameter(Position=0, Mandatory=1,ValueFromPipeline=$true)]
         [string] $file,
         [Parameter(Position=1, Mandatory=0)]
-        [switch] $isFile = 1
+        [switch] $isFile = $true
     )
     
     if($isFile){
@@ -85,7 +85,7 @@ function CsProj-GetVersion {
         [Parameter(Position=0, Mandatory=1,ValueFromPipeline=$true)]
         [string] $file,
         [Parameter(Position=1, Mandatory=0)]
-        [switch] $isFile = 1
+        [switch] $isFile = $true
     )
 
     if($isFile){
